@@ -2,7 +2,7 @@ apply plugin: 'com.android.library'
 apply plugin: 'maven-publish'
 
 android {
-    compileSdkVersion compileSdkVer
+    compileSdk compileSdkVer
     ndkVersion ndkVersionVar
 
     defaultConfig {
@@ -28,6 +28,23 @@ android {
 dependencies {
     testImplementation 'junit:junit:4.13.2'
     testImplementation 'org.mockito:mockito-core:5.6.0'
+}
+
+afterEvaluate {
+    publishing {
+        publications {
+            // Configure your publication here (e.g., aar)
+        }
+        repositories {
+            maven {
+                url = uri("https://maven.pkg.github.com/gtomek/birchbeer")
+                credentials {
+                    username = project.properties['gpr.user']
+                    password = project.properties['gpr.key']
+                }
+            }
+        }
+    }
 }
 
 apply from: '../gradle-mvn-push.gradle'
