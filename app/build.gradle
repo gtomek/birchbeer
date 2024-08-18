@@ -3,15 +3,15 @@ apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-parcelize'
 
 android {
-    compileSdkVersion compileSdkVer
+    compileSdk compileSdkVer
 
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_17
-        targetCompatibility = JavaVersion.VERSION_17
+        sourceCompatibility = JavaVersion.VERSION_21
+        targetCompatibility = JavaVersion.VERSION_21
     }
 
     kotlinOptions {
-        jvmTarget = JavaVersion.VERSION_17.toString()
+        jvmTarget = JavaVersion.VERSION_21.toString()
     }
 
     defaultConfig {
@@ -19,7 +19,7 @@ android {
         minSdkVersion minSdkVer
         targetSdkVersion targetSdkVer
         versionCode 13
-        versionName "0.0.11"
+        versionName "0.0.1"
         vectorDrawables.useSupportLibrary = true
 
         archivesBaseName = "birchBeer-$versionName-[$versionCode]"
@@ -49,6 +49,9 @@ android {
         }
     }
     namespace 'com.birchbeer.sample'
+    buildFeatures {
+        buildConfig true
+    }
 }
 
 dependencies {
