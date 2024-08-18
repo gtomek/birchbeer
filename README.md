@@ -1,10 +1,10 @@
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/56a3e8f39388480e809caab60c5c28da)](https://www.codacy.com/app/KimChangYoun/rootbeerFresh?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=KimChangYoun/rootbeerFresh&amp;utm_campaign=Badge_Grade)
 <img src="https://travis-ci.org/travis-ci/travis-web.svg?branch=master">
 <br/><br/>
-Enjoy the latest Magisk and MagiskHide Detection RootBeerFresh!!
+Enjoy the latest Magisk and MagiskHide Detection of Birchbeer, based on RootBeerFresh!!
 <br/><img src="./Magisk_UDS_Detect_UI.jpg" width="50%">
 
-RootbeerFresh is an open source project that checks if your Android smartphone device is rooted.
+Birchbeer is an open source project that checks if your Android smartphone device is rooted.
 
 This project is based on rootbeer open source.
 There are a number of well-known rooting detection technologies in place.
@@ -13,11 +13,11 @@ However, we aim to detect a new rooting device with a completely different techn
 So, look at the more extensive Android rooting detection project.
 
 Examples of new rooting technologies are those that are extremely difficult to detect for rooted states like Magisk.
-Detecting these new rooting technologies is RootbeerFresh's ultimate goal.
+Detecting these new rooting technologies is BirchBeer's ultimate goal.
 
 
 [Google Play app]<br/>
-<a href='https://play.google.com/store/apps/details?id=com.kimchangyoun.rootbeerFresh.sample&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png' width="250"/></a>
+<a href='https://play.google.com/store/apps/details?id=com.birchbeer.sample&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png' width="250"/></a>
 
 [Development environment]<br/>
 Builds on the latest Android Studio 3.3 and NDK.
@@ -26,7 +26,7 @@ Builds on the latest Android Studio 3.3 and NDK.
 If you have a new and better creative way, please leave your PR in any case.
 
 [Disclaimer and limitations]<br/>
-Sometimes the detection method of RootbeerFresh may not work correctly.
+Sometimes the detection method of BirchBeer may not work correctly.
 When RootbeerFresh is not sure if the device is rooted, it displays a '*' next to the rooted detection message.
 
 [Library]<br/>
@@ -56,7 +56,7 @@ Available on [maven central](https://search.maven.org/#search%7Cga%7C1%7Ca%3A%22
 
 ```java
 dependencies {
-    implementation 'kimchangyoun:rootbeerFresh-lib:0.0.11'
+    implementation 'gtomek:birchbeer-lib:0.0.11'
 }
 ```
 

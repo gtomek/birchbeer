@@ -46,7 +46,7 @@
       android:paddingTop="4dp"
       tools:listitem="@layout/item_root_check" />
 
-    <com.kimchangyoun.rootbeerFresh.sample.ui.RootedResultTextView
+    <com.birchbeer.sample.ui.RootedResultTextView
       android:id="@+id/isRootedTextView"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"

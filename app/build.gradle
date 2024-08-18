@@ -15,14 +15,14 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.kimchangyoun.rootbeerFresh.sample"
+        applicationId "com.birchbeer.sample"
         minSdkVersion minSdkVer
         targetSdkVersion targetSdkVer
         versionCode 13
         versionName "0.0.11"
         vectorDrawables.useSupportLibrary = true
 
-        archivesBaseName = "rootbeerFresh-$versionName-[$versionCode]"
+        archivesBaseName = "birchBeer-$versionName-[$versionCode]"
     }
 
     //check if the keystore details are defined in gradle.properties (this is so the key is not in github)
@@ -48,11 +48,11 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
-    namespace 'com.kimchangyoun.rootbeerFresh.sample'
+    namespace 'com.birchbeer.sample'
 }
 
 dependencies {
-    implementation project(':LibRootbeerFresh')
+    implementation project(':birchBeer')
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlinVersion"
     implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutinesVersion"
     implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutinesVersion"

@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <application
-        android:name="com.kimchangyoun.rootbeerFresh.sample.RootSampleApp"
+        android:name="com.birchbeer.sample.RootSampleApp"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme.NoActionBar"
