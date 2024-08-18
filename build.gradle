@@ -33,7 +33,7 @@ subprojects {
     // When updating the sdk version, please remember to change the circleci image to match
     // .circle/config.yml
     ext.compileSdkVer = 34
-    ext.minSdkVer = 15
+    ext.minSdkVer = 19
     ext.targetSdkVer = 34
     ext.ndkVersionVar = '25.2.9519653'
 }

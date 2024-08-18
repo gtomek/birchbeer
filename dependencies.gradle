@@ -1,7 +1,7 @@
 ext{
-    kotlinVersion = '1.9.10'
+    kotlinVersion = '1.9.24'
 
-    gradlePluginVersion = '8.1.2'
+    gradlePluginVersion = '8.5.2'
     mavenGradlePluginVersion = '2.1'
 
     //Sample App
