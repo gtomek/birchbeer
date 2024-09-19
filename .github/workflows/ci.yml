@@ -22,7 +22,7 @@ jobs:
       - name: Set up NDK
         uses: android-actions/setup-android@v3
         with:
-          api-level: 33  # Replace with your target API level
+          api-level: 35  # Replace with your target API level
           ndk-version: '25.2.9519653'  # Replace with your NDK version
 
       - name: Cache Gradle dependencies
@@ -36,6 +36,6 @@ jobs:
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew
       - name: Build library
-        run: ./gradlew build
+        run: ./gradlew birchBeer:build
 
   # Additional steps for testing, code coverage, etc.
