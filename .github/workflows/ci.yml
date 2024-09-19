@@ -35,7 +35,14 @@ jobs:
 
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew
+
       - name: Build library
         run: ./gradlew birchBeer:build
+
+      - name: store lib artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: birchBeer
+          path: birchBeer/build/outputs/aar/*.aar
 
   # Additional steps for testing, code coverage, etc.
