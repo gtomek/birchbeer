@@ -8,7 +8,11 @@ android {
     defaultConfig {
         minSdkVersion minSdkVer
         targetSdkVersion targetSdkVer
+        versionCode 1
+        versionName "0.0.1"
         ndk.abiFilters 'armeabi-v7a','arm64-v8a','x86','x86_64'
+
+        archivesBaseName = "birchbeer-lib-$versionName"
     }
     buildTypes {
         release {
@@ -35,10 +39,10 @@ afterEvaluate {
         publications {
             aar(MavenPublication) {
                 groupId = 'com.birchbeer'
-                artifactId = 'birchBeer'
+                artifactId = 'birchbeer-lib'
                 version = '0.0.1'
 
-                artifact("$buildDir/outputs/aar/birchbeer-release.aar")
+                artifact("$buildDir/outputs/aar/birchbeer-lib-$version-release.aar")
             }
         }
         repositories {
