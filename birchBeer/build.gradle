@@ -33,14 +33,21 @@ dependencies {
 afterEvaluate {
     publishing {
         publications {
-            // Configure your publication here (e.g., aar)
+            aar(MavenPublication) {
+                groupId = 'com.birchbeer'
+                artifactId = 'birchBeer'
+                version = '0.0.1'
+
+                artifact("$buildDir/outputs/aar/birchbeer-release.aar")
+            }
         }
         repositories {
             maven {
                 url = uri("https://maven.pkg.github.com/gtomek/birchbeer")
                 credentials {
-                    username = project.properties['gpr.user']
-                    password = project.properties['gpr.key']
+                    username =  System.getenv("GITHUB_API_USER") ?: project.findProperty("gpr.username")
+                    password =  System.getenv("GITHUB_API_TOKEN_DEPLOY") ?: project.findProperty("gpr.token")
+                    println "GitHubPackages build.gradle\n\tusername=$username\n\ttoken=$password"
                 }
             }
         }
