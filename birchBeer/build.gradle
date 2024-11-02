@@ -42,7 +42,9 @@ afterEvaluate {
                 artifactId = 'birchbeer-lib'
                 version = '0.0.1'
 
-                artifact("$buildDir/outputs/aar/birchbeer-lib-$version-release.aar")
+                artifact("$buildDir/outputs/aar/birchbeer-lib-0.0.1-release.aar") {
+                    builtBy tasks.named("bundleReleaseAar")
+                }
             }
         }
         repositories {
