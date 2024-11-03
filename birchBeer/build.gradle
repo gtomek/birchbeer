@@ -9,7 +9,7 @@ android {
         minSdkVersion minSdkVer
         targetSdkVersion targetSdkVer
         versionCode 1
-        versionName "0.0.1"
+        versionName "0.0.2"
         ndk.abiFilters 'armeabi-v7a','arm64-v8a','x86','x86_64'
 
         archivesBaseName = "birchbeer-lib-$versionName"
@@ -40,9 +40,9 @@ afterEvaluate {
             aar(MavenPublication) {
                 groupId = 'com.birchbeer'
                 artifactId = 'birchbeer-lib'
-                version = '0.0.1'
+                version = '0.0.2'
 
-                artifact("$buildDir/outputs/aar/birchbeer-lib-0.0.1-release.aar") {
+                artifact("$buildDir/outputs/aar/birchbeer-lib-0.0.2-release.aar") {
                     builtBy tasks.named("bundleReleaseAar")
                 }
             }
