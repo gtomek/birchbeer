@@ -27,10 +27,10 @@ If you have a new and better creative way, please leave your PR in any case.
 
 [Disclaimer and limitations]<br/>
 Sometimes the detection method of BirchBeer may not work correctly.
-When RootbeerFresh is not sure if the device is rooted, it displays a '*' next to the rooted detection message.
+When BirchBeer is not sure if the device is rooted, it displays a '*' next to the rooted detection message.
 
 [Library]<br/>
-RootbeerFresh comes with a library.
+BirchBeer comes with a library.
 You can use the library in the following ways:
 
 ```java

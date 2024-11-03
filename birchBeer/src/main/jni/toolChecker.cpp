@@ -38,7 +38,7 @@
  ****************************************************************************/
 
 // LOGCAT
-#define  LOG_TAG    "RootBeerFresh"
+#define  LOG_TAG    "BirchBeer"
 #define  LOGD(...)  if (DEBUG) __android_log_print(ANDROID_LOG_INFO,LOG_TAG,__VA_ARGS__);
 #define  LOGE(...)  __android_log_print(ANDROID_LOG_ERROR,LOG_TAG,__VA_ARGS__);
 
@@ -55,7 +55,7 @@ extern "C" /********************************************************************
  * 	bool - true to log debug messages
  *
  *****************************************************************************/
-jint Java_com_kimchangyoun_rootbeerFresh_RootBeerNative_setLogDebugMessages( JNIEnv* env, jobject thiz, jboolean debug)
+jint Java_com_birchbeer_RootBeerNative_setLogDebugMessages( JNIEnv* env, jobject thiz, jboolean debug)
 {
   if (debug){
     DEBUG = 1;
@@ -196,7 +196,7 @@ extern "C" /********************************************************************
  * Return value: 0 - non-existant / not visible, 1 or more - exists
  *
  *****************************************************************************/
-int Java_com_kimchangyoun_rootbeerFresh_RootBeerNative_checkForMagiskUDS( JNIEnv* env, jobject thiz )
+int Java_com_birchbeer_RootBeerNative_checkForMagiskUDS( JNIEnv* env, jobject thiz )
 {
     int uds_detect_count = 0;
     int magisk_file_detect_count = 0;
@@ -296,7 +296,7 @@ extern "C" /********************************************************************
  * Return value: int number of su binaries found
  *
  *****************************************************************************/
-int Java_com_kimchangyoun_rootbeerFresh_RootBeerNative_checkForRoot( JNIEnv* env, jobject thiz, jobjectArray pathsArray ) {
+int Java_com_birchbeer_RootBeerNative_checkForRoot( JNIEnv* env, jobject thiz, jobjectArray pathsArray ) {
 
     int binariesFound = 0;
 

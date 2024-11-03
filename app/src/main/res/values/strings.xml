@@ -4,7 +4,7 @@
     <string name="action_settings">Settings</string>
     <string name="action_github">Get on GitHub</string>
     <string name="action_info">info</string>
-    <string name="info_details">RootbeerFresh is an open source project that checks if your Android smartphone device is rooted.</string>
+    <string name="info_details">BirchBeer is an open source project that checks if your Android smartphone device is rooted.</string>
 
     <string name="result_rooted">ROOTED*</string>
     <string name="result_not_rooted">NOT ROOTED</string>
