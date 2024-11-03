@@ -52,15 +52,19 @@ rootBeer.isRootedWithoutBusyBoxCheck()
 ```
 
 [Dependency]<br/>
-Available on [maven central](https://search.maven.org/#search%7Cga%7C1%7Ca%3A%22rootbeerFresh-lib%22), to include using Gradle just add the following:
+Available on jitpack.io, to include using Gradle just add the following:
 
 ```java
 dependencies {
-    implementation 'gtomek:birchbeer-lib:0.0.3'
+    implementation 'com.github.gtomek:birchbeer:0.0.3'
+}
+
+repositories {
+    maven { url = uri("https://jitpack.io") }
 }
 ```
 
-Or use this [Jitpack.io link](https://jitpack.io/#kimchangyoun/rootbeerFresh)
+[Jitpack.io link](https://jitpack.io/#gtomek/birchBeer)
 
 [Licence]<br/>
 Apache License, Version 2.0
