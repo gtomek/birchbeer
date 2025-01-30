@@ -23,7 +23,7 @@ jobs:
         uses: android-actions/setup-android@v3
         with:
           api-level: 35  # Replace with your target API level
-          ndk-version: '25.2.9519653'  # Replace with your NDK version
+          ndk-version: '27.2.12479018'  # Replace with your NDK version
 
       - name: Cache Gradle dependencies
         uses: actions/cache@v4
