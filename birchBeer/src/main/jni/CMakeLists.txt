@@ -11,4 +11,4 @@ target_link_libraries(toolChecker
         log)
 
 # Use 16 KB ELF alignment to support devices with page size greater than 4 KB
-target_link_options(realm-jni PRIVATE "-Wl,-z,max-page-size=16384")
+target_link_options(toolChecker PRIVATE "-Wl,-z,max-page-size=16384")
