@@ -56,7 +56,7 @@ Available on jitpack.io, to include using Gradle just add the following:
 
 ```java
 dependencies {
-    implementation 'com.github.gtomek:birchbeer:0.0.6'
+    implementation 'com.github.gtomek:birchbeer:0.0.7'
 }
 
 repositories {
